@@ -1,0 +1,8 @@
+<h3><%= @cocktail.name %></h3>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+<!--   <script async src="https://imgbb.com/upload.js"></script> -->
+  <%= f.association :ingredient %>
+  <%= f.button :submit %>
+<% end %>
+
